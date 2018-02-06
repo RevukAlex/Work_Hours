@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.revuk.work_hours.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/LinerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        android:layout_toLeftOf="@+id/gridLayout2"
+        android:layout_toStartOf="@+id/gridLayout2">
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Mon" />
+
+
+        <TextView
+            android:id="@+id/textView68"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Tue" />
+
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Wed" />
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Thu" />
+
+        <TextView
+            android:id="@+id/textView72"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Fri" />
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Sut" />
+
+
+        <TextView
+            android:id="@+id/textView74"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:text="Sun"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@+id/LinerLayout"
+
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        android:layout_marginRight="80dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth">
+
+
+    </GridView>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="@+id/gridview"
+        android:layout_below="@+id/LinerLayout"
+        android:layout_centerInParent="false"
+        app:columnCount="2"
+        android:id="@+id/gridLayout2">
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text=" "
+           />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="40dp"
+            android:layout_height="58dp"
+            android:gravity="center"
+
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="40dp"
+            android:layout_height="64dp"
+            android:gravity="center"
+
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="40dp"
+            android:layout_height="53.2dp"
+            android:gravity="center"
+
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textView84"
+            android:layout_width="40dp"
+            android:layout_height="53.2dp"
+            android:gravity="center"
+
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textView85"
+            android:layout_width="40dp"
+            android:layout_height="59dp"
+            android:gravity="center"
+
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textView86"
+            android:layout_width="40dp"
+            android:layout_height="59dp"
+            android:gravity="center"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textView87"
+            android:layout_width="40dp"
+            android:layout_height="61dp"
+            android:gravity="center"
+
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textView88"
+            android:layout_width="40dp"
+            android:layout_height="61dp"
+            android:gravity="center"
+            android:text=" " />
+
+
+
+
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/LinerLayout"
+        android:layout_toRightOf="@+id/LinerLayout"
+        android:orientation="horizontal"
+        android:layout_above="@+id/gridview">
+
+        <TextView
+            android:id="@+id/textView75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Hours" />
+
+        <TextView
+            android:id="@+id/textView76"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Sum" />
+    </LinearLayout>
+</RelativeLayout>
